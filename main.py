@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route("/webhook/", methods=["POST", "GET"])
 def webhook_whatsapp():
     if request.method == "GET":
-        if request.args.get('hub.verify_token') == "FelipeWaBot":
+        if request.args.get('hub.verify_token') == "<webhook password>":
             return request.args.get('hub.challenge')
         else:
             return "Error de autentificacion."
