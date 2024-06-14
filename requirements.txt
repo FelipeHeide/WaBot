@@ -1,0 +1,6 @@
+flask
+requests
+groq
+googlesearch-python
+heyoo
+deep-translator
