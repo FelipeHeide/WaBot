@@ -8,7 +8,7 @@ from deep_translator import GoogleTranslator
 
 
 def sendMessage(message, type):
-    token = '<messaging app token'
+    token = 'EAACcosEiDGcBO2eJ6Fs63DCk2rswYKvAs4XZCXW2EU54A2ZAyetBhH5ZAlgXZAbgEZCbpfeCJcDqdYCYs75Nu2zxfLEHelUZC91cTukqm81ZCZBOZCNkbXqbgAaooO99xJqAqdEpb8H9n03qsKxeQK0X7e5KMJmQ9V957okEL2TPCuwxkZALOZBp0w34x3rmzPXouSokFHBjWulCzkGzblsAvlOqUP7nakIkMzWUjjQBZC3ioX1umabt8E0o'
     idNumeroTeléfono = '108450905597878'
     mensajeWa = WhatsApp(token, idNumeroTeléfono)
     if type == "text":
@@ -19,7 +19,7 @@ def sendMessage(message, type):
        mensajeWa.send_audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", "54111524612307")
 
 
-client = Groq(api_key="<groq token>")
+client = Groq(api_key="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")
 
 def grok_functionality(message):
     chat_completion = client.chat.completions.create(
@@ -63,7 +63,7 @@ def get_definition(palabra):
     "limit": 1,
     "includeRelated": "false",
     "useCanonical": "false",
-    "api_key": "<wordnik api key"
+    "api_key": "ir2gi4h02gbswj7oxdv2qr81srt7y16fo1cx0ajyfo9htx7fy"
   }
 
   response = requests.get(endpoint, params=params)
